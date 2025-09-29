@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BlueStone Billing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       height: 100vh;
       display: flex;
       flex-direction: column;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
     }
 
     header {
@@ -20,34 +21,48 @@
 
     main {
       flex: 1;
-      background-color: #EAF4FB; /* very light soft blue */
+      background: linear-gradient(to bottom, #EAF4FB, #FFFFFF); /* gradient */
       display: flex;
       flex-direction: column;
-      justify-content: flex-start; /* content starts higher */
+      justify-content: space-between;
       align-items: center;
       text-align: center;
-      color: #1E3A8A; /* softer blue for text */
-      padding-top: 80px; /* push down a bit */
+      color: #1E3A8A;
+      padding: 40px 20px;
     }
 
     h1 {
       font-size: 6rem;
       margin: 30px 0;
-      font-weight: bold;
+      font-weight: 600;
     }
 
-    p {
-      font-size: 3rem;
+    .contact {
+      margin-bottom: 60px;
+      background: #ffffffcc; /* subtle white box */
+      padding: 25px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .contact p {
+      font-size: 2.2rem;
       margin: 15px 0;
     }
 
-    a {
+    .contact a {
       color: #1E3A8A;
       text-decoration: none;
-      font-size: 3rem;
+      font-size: 2.2rem;
     }
 
-    a:hover {
+    .contact a:hover {
       text-decoration: underline;
     }
 
@@ -55,8 +70,9 @@
       background-color: #1E3A8A;
       color: white;
       text-align: center;
-      font-size: 1rem;
+      font-size: 0.9rem;
       padding: 15px;
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -64,8 +80,11 @@
   <header></header>
   <main>
     <h1>BlueStone Billing</h1>
-    <p>718-725-7735</p>
-    <p><a href="mailto:info@bluestonebilling.com">info@bluestonebilling.com</a></p>
+    <div class="contact">
+      <h2>Contact Us...</h2>
+      <p>718-725-7735</p>
+      <p><a href="mailto:info@bluestonebilling.com">info@bluestonebilling.com</a></p>
+    </div>
   </main>
   <footer>
     © BlueStone Billing 2025. All rights reserved.
