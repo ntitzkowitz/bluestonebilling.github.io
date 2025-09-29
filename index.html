@@ -13,41 +13,50 @@
       font-family: Arial, sans-serif;
     }
 
-    header, footer {
-      background-color: #00008B; /* dark blue */
+    header {
+      background-color: #1E3A8A; /* softer friendly blue */
       height: 60px;
     }
 
     main {
       flex: 1;
-      background-color: #E6F2FA; /* very light blue */
+      background-color: #EAF4FB; /* very light soft blue */
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start; /* content starts higher */
       align-items: center;
       text-align: center;
-      color: #00008B;
+      color: #1E3A8A; /* softer blue for text */
+      padding-top: 80px; /* push down a bit */
     }
 
     h1 {
-      font-size: 6rem; /* much bigger */
+      font-size: 6rem;
       margin: 30px 0;
       font-weight: bold;
     }
 
     p {
-      font-size: 3rem; /* bigger contact info */
+      font-size: 3rem;
       margin: 15px 0;
     }
 
     a {
-      color: #00008B;
+      color: #1E3A8A;
       text-decoration: none;
       font-size: 3rem;
     }
 
     a:hover {
       text-decoration: underline;
+    }
+
+    footer {
+      background-color: #1E3A8A;
+      color: white;
+      text-align: center;
+      font-size: 1rem;
+      padding: 15px;
     }
   </style>
 </head>
@@ -58,6 +67,8 @@
     <p>718-725-7735</p>
     <p><a href="mailto:info@bluestonebilling.com">info@bluestonebilling.com</a></p>
   </main>
-  <footer></footer>
+  <footer>
+    © BlueStone Billing 2025. All rights reserved.
+  </footer>
 </body>
 </html>
