@@ -43,8 +43,25 @@
       max-width: 900px;
       width: 90%;
       height: auto;
-      margin: 10px 0; /* small spacing above and below */
+      margin: 5px 0; /* minimal spacing above and below */
       image-rendering: auto; /* keeps PNG sharp */
+    }
+
+    /* Tagline */
+    .tagline {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      color: #1E3A8A;
+      margin: 5px 0 15px 0; /* small spacing below tagline */
+      font-weight: 400;
+      text-align: center;
+    }
+
+    /* Divider */
+    .divider {
+      width: 60%;
+      border-top: 2px solid #1E3A8A;
+      margin: 10px 0 20px 0;
+      opacity: 0.3; /* subtle and professional */
     }
 
     /* Contact section */
@@ -54,7 +71,6 @@
       align-items: center;
       text-align: center;
       gap: 10px; /* spacing between phone and email */
-      padding: 15px 25px;
       width: 100%;
       max-width: 500px;
       font-size: clamp(1.2rem, 3vw, 1.6rem);
@@ -87,12 +103,20 @@
       margin-top: auto;
     }
 
+    /* Responsive tweaks */
     @media (max-width: 600px) {
       .logo {
-        margin: 5px 0 15px 0;
+        margin: 5px 0 10px 0;
+      }
+      .tagline {
+        font-size: clamp(0.9rem, 3vw, 1.3rem);
+        margin-bottom: 10px;
+      }
+      .divider {
+        width: 80%;
+        margin: 8px 0 15px 0;
       }
       .contact {
-        padding: 10px 15px;
         font-size: clamp(1rem, 3vw, 1.4rem);
       }
     }
@@ -103,6 +127,12 @@
   <main>
     <!-- Logo -->
     <img src="logo.png" alt="BlueStone Billing Logo" class="logo">
+
+    <!-- Tagline -->
+    <p class="tagline">Your Trusted Billing Partner</p>
+
+    <!-- Divider -->
+    <div class="divider"></div>
 
     <!-- Contact Section -->
     <div class="contact">
