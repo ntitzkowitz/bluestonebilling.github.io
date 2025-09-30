@@ -15,13 +15,13 @@
     }
 
     header {
-      background-color: #1E3A8A; /* softer friendly blue */
+      background-color: #1E3A8A;
       height: 60px;
     }
 
     main {
       flex: 1;
-      background: linear-gradient(to bottom, #EAF4FB, #FFFFFF); /* gradient */
+      background: linear-gradient(to bottom, #EAF4FB, #FFFFFF);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -31,19 +31,20 @@
       padding: 40px 20px;
     }
 
-    h1 {
-      font-size: clamp(2.5rem, 8vw, 6rem); /* responsive scaling */
-      margin: 30px 0;
-      font-weight: 600;
+    .logo {
+      max-width: 300px;   /* adjusts for large screens */
+      width: 100%;        /* shrinks on small screens */
+      height: auto;       /* keeps the proportions */
+      margin: 30px 0;     /* spacing above and below */
     }
 
     .contact {
       margin-top: 30px;
-      background: #ffffffcc; /* subtle white box */
+      background: #ffffffcc;
       padding: 25px 40px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      max-width: 400px; /* keeps box from stretching too wide */
+      max-width: 400px;
       width: 100%;
     }
 
@@ -81,7 +82,9 @@
 <body>
   <header></header>
   <main>
-    <h1>BlueStone Billing</h1>
+    <!-- Replace with your logo -->
+    <img src="logo.png" alt="BlueStone Billing Logo" class="logo">
+    
     <div class="contact">
       <h2>Contact Us</h2>
       <p>718-725-7735</p>
