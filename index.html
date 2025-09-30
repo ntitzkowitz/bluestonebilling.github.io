@@ -8,7 +8,7 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       font-family: 'Poppins', Arial, sans-serif;
@@ -24,7 +24,7 @@
       background: linear-gradient(to bottom, #EAF4FB, #FFFFFF); /* gradient */
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       text-align: center;
       color: #1E3A8A;
@@ -32,34 +32,36 @@
     }
 
     h1 {
-      font-size: 6rem;
+      font-size: clamp(2.5rem, 8vw, 6rem); /* responsive scaling */
       margin: 30px 0;
       font-weight: 600;
     }
 
     .contact {
-      margin-bottom: 60px;
+      margin-top: 30px;
       background: #ffffffcc; /* subtle white box */
       padding: 25px 40px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 400px; /* keeps box from stretching too wide */
+      width: 100%;
     }
 
     .contact h2 {
-      font-size: 2.5rem;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
       margin-bottom: 20px;
       font-weight: 600;
     }
 
     .contact p {
-      font-size: 2.2rem;
+      font-size: clamp(1rem, 3vw, 1.5rem);
       margin: 15px 0;
     }
 
     .contact a {
       color: #1E3A8A;
       text-decoration: none;
-      font-size: 2.2rem;
+      font-size: clamp(1rem, 3vw, 1.5rem);
     }
 
     .contact a:hover {
@@ -81,7 +83,7 @@
   <main>
     <h1>BlueStone Billing</h1>
     <div class="contact">
-      <h2>Contact Us...</h2>
+      <h2>Contact Us</h2>
       <p>718-725-7735</p>
       <p><a href="mailto:info@bluestonebilling.com">info@bluestonebilling.com</a></p>
     </div>
